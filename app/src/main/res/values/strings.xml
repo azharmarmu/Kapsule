@@ -1,3 +1,32 @@
 <resources>
     <string name="app_name">Kapsule</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="support_ask_question"><![CDATA[Support & Ask Question]]></string>
+    <string name="otc_wellness"><![CDATA[OTC & Wellness]]></string>
+    <string name="order_with_prescription">Order With Prescription</string>
+    <string name="search_buy_medicines"><![CDATA[Search & Buy Medicines]]></string>
+    <string name="my_orders">My Orders</string>
+    <string name="welcome_user">Welcome User</string>
+    <string name="login_sign_up">Login/Sign up</string>
+    <string name="kaps">Kaps</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="do_you_have_an_account_login">Do you have an account? Login</string>
+    <string name="name">Name</string>
+    <string name="password">Password</string>
+    <string name="email_id">Email ID</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="_ind_country_code">+91</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="don_t_have_an_account_register">Don\'t have an account? Register</string>
+    <string name="upload">UPLOAD</string>
+    <string name="show_on_delivery">Show on Delivery</string>
+    <string name="add">ADD</string>
 </resources>

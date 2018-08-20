@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_175dp"
+    android:background="@drawable/background"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="@dimen/_16dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <LinearLayout
+        android:id="@+id/welcomeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="monospace"
+            android:padding="@dimen/_4dp"
+            android:text="@string/welcome_user"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fontFamily="sans-serif"
+            android:padding="@dimen/_4dp"
+            android:text="@string/login_sign_up"
+            android:textColor="@color/colorBackgroundWhite"
+            android:textSize="@dimen/_16sp"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/profileLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="monospace"
+            android:padding="@dimen/_4dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvMailID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fontFamily="sans-serif"
+            android:padding="@dimen/_4dp"
+            android:textColor="@color/colorBackgroundWhite"
+            android:textSize="@dimen/_16sp"
+            android:textStyle="normal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1dp"
+            android:layout_marginTop="@dimen/_4dp"
+            android:background="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/tvKaps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4dp"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="@dimen/_16sp" />
+    </LinearLayout>
+
+</LinearLayout>

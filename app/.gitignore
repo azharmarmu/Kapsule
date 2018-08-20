@@ -1,1 +1,15 @@
+*.iml
+.gradle
+/local.properties
+/.idea
+/.idea/caches/build_file_checksums.ser
+/.idea/misc.xml
+/.idea/assetWizardSettings.xml
+.idea/caches/build_file_checksums.ser
+.idea/dictionaries/macretina.xml
+/.idea/vcs.xml
+/.idea/*
+.DS_Store
 /build
+/captures
+.externalNativeBuild
