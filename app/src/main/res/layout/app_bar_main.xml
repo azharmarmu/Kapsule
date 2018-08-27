@@ -40,6 +40,17 @@
                 android:textStyle="bold" />
 
             <ImageView
+                android:id="@+id/menu_search"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/menu_notification"
+                android:contentDescription="@string/app_name"
+                android:paddingEnd="@dimen/_10dp"
+                android:paddingStart="@dimen/_10dp"
+                android:src="@drawable/ic_search" />
+
+            <ImageView
                 android:id="@+id/menu_notification"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"

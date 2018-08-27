@@ -43,6 +43,7 @@ import com.meds.kapsule.utils.DialogUtils;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Objects;
 
 
 @SuppressWarnings("unchecked")
@@ -57,6 +58,10 @@ public class MainActivity extends AppCompatActivity
         _this = MainActivity.this;
         setContentView(R.layout.activity_main);
 
+        Bundle bundle = getIntent().getExtras();
+        if(bundle!=null){
+            updateCarousel((List<CarouselModel>) Objects.requireNonNull(bundle.get(Constants.carouselList)));
+        }
 
         NavigationView navigationView = findViewById(R.id.nav_view);
         View header = navigationView.getHeaderView(0);
@@ -88,40 +93,14 @@ public class MainActivity extends AppCompatActivity
             overridePendingTransition(R.anim.right_in, R.anim.left_out);
             finish();
         });
+
+        ImageView menu_search = findViewById(R.id.menu_search);
+        menu_search.setOnClickListener(view -> startActivity(new Intent(_this,SearchMedicineActivity.class)));
     }
 
 
     private void bodyView() {
-        carouselSetup();
-    }
-
-    private void carouselSetup() {
-        new FirebaseDB()
-                .carouselListRT
-                .addValueEventListener(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                        if (dataSnapshot.getValue() != null) {
-
-                            HashMap<String, Object> carouselMap = (HashMap<String, Object>) dataSnapshot.getValue();
-
-                            List<CarouselModel> carouselList = new ArrayList<>();
-                            for (String key : carouselMap.keySet()) {
-                                HashMap<String, Object> carousel = (HashMap<String, Object>) carouselMap.get(key);
-
-                                String url = carousel.get(Constants.url).toString();
-                                String link = carousel.get(Constants.link).toString();
-                                carouselList.add(new CarouselModel(url, link));
-                            }
-                            updateCarousel(carouselList);
-                        }
-                    }
-
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError databaseError) {
-                        DialogUtils.appToastShort(_this, databaseError.getMessage());
-                    }
-                });
+        //todo
     }
 
     private void updateCarousel(List<CarouselModel> carouselList) {

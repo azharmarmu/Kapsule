@@ -29,12 +29,16 @@
         <activity
             android:name=".activity.LoginRegisterActivity"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.PrescriptionOrderActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.SearchMedicineActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
 
         <meta-data
             android:name="io.fabric.ApiKey"
             android:value="0e3cb8ec5c0e1974b2e96a7de185bb7393ce63a7" />
-
-        <activity android:name=".activity.PrescriptionOrderActivity"></activity>
     </application>
 
 </manifest>

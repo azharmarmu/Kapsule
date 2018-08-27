@@ -11,11 +11,12 @@
     android:orientation="vertical">
 
     <ImageView
-        android:layout_width="match_parent"
+        android:layout_width="@dimen/_200dp"
         android:layout_height="@dimen/_50dp"
         android:layout_gravity="center"
+        android:background="@color/colorWhite"
         android:contentDescription="@string/app_name"
-        android:src="@drawable/ic_launcher_foreground" />
+        android:src="@mipmap/banner" />
 
     <TextView
         android:layout_width="match_parent"

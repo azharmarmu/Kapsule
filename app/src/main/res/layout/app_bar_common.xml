@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:theme="@style/AppTheme.AppBarOverlay">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/_16dp"
+            android:layout_toStartOf="@+id/menu_notification"
+            android:fontFamily="sans-serif"
+            android:gravity="start|center"
+            android:text="@string/app_name"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/menu_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/menu_notification"
+            android:contentDescription="@string/app_name"
+            android:paddingEnd="@dimen/_10dp"
+            android:paddingStart="@dimen/_10dp"
+            android:src="@drawable/ic_search" />
+
+        <ImageView
+            android:id="@+id/menu_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/menu_cart"
+            android:contentDescription="@string/app_name"
+            android:paddingEnd="@dimen/_10dp"
+            android:paddingStart="@dimen/_10dp"
+            android:src="@drawable/ic_notifications" />
+
+        <ImageView
+            android:id="@+id/menu_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:paddingEnd="@dimen/_10dp"
+            android:paddingStart="@dimen/_10dp"
+            android:src="@drawable/ic_cart" />
+    </RelativeLayout>
+</android.support.design.widget.AppBarLayout>
